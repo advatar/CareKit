@@ -28,7 +28,7 @@
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-//#if !os(watchOS)
+#if !os(watchOS)
 
 import Foundation
 import SwiftUI
@@ -261,4 +261,4 @@ struct NumericProgressTaskView_Previews: PreviewProvider {
 
 #endif
 
-//#endif
+#endif

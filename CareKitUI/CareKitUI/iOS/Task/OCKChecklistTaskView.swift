@@ -27,7 +27,7 @@
  OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-//#if !os(watchOS)
+#if !os(watchOS)
 
 import UIKit
 
@@ -244,4 +244,4 @@ open class OCKChecklistTaskView: OCKView, OCKTaskDisplayable {
                                                           trailing: style.dimension.directionalInsets1.trailing)
     }
 }
-//#endif
+#endif

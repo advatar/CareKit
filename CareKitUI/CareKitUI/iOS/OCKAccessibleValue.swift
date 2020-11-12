@@ -28,7 +28,7 @@
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-//#if !os(watchOS)
+#if !os(watchOS)
 
 import UIKit
 
@@ -69,4 +69,4 @@ struct OCKAccessibleValue<Container> {
     }
 }
 
-//#endif
+#endif
