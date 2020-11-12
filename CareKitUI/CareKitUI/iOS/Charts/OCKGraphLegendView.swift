@@ -27,7 +27,7 @@
  OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-#if !os(watchOS)
+//#if !os(watchOS)
 
 import UIKit
 
@@ -119,4 +119,4 @@ private class OCKGradientView: OCKView {
         gradient.endPoint = CGPoint(x: 0.5, y: 0)
     }
 }
-#endif
+//#endif

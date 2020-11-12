@@ -27,7 +27,7 @@
  OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-#if !os(watchOS)
+//#if !os(watchOS)
 
 import UIKit
 
@@ -63,4 +63,4 @@ public protocol OCKContactViewDelegate: AnyObject {
     /// - Parameter contactView: The view displaying the contact.
     func didSelectContactView(_ contactView: UIView & OCKContactDisplayable)
 }
-#endif
+//#endif

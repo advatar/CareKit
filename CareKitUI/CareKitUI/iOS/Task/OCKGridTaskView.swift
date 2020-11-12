@@ -27,7 +27,7 @@
  OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-#if !os(watchOS)
+//#if !os(watchOS)
 
 import UIKit
 
@@ -253,4 +253,4 @@ open class OCKGridTaskView: OCKView, OCKTaskDisplayable, UICollectionViewDelegat
 private extension Int {
     var float: CGFloat { return CGFloat(self) }
 }
-#endif
+//#endif
