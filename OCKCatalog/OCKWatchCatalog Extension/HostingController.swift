@@ -28,14 +28,42 @@
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 import CareKit
+import CareKitStore
 import SwiftUI
 import WatchKit
 
 class HostingController: WKHostingController<ContentView> {
+    @Environment(\.storeManager) private var storeManager
+
     override var body: ContentView {
-        ContentView()
+        ContentView() //controller: OCKSimpleTaskController(storeManager: storeManager))
     }
 }
+
+/*
+struct ContentView: View {
+
+    // Observe the view model in the controller.
+    @ObservedObject var controller: OCKSimpleTaskController
+
+    // Define an event for convenience.
+    var event: OCKAnyEvent? {
+        controller.taskEvents
+        //.value?.firstEvent
+    }
+
+    var body: some View {
+        VStack(alignment: .center, spacing: 16) {
+            Text(event?.task.title ?? "")
+            Button(action: {
+                let isComplete = self.event?.outcome != nil
+                self.controller.setEvent(atIndexPath: IndexPath(row: 0, section: 0), isComplete: !isComplete, completion: nil)
+            }) {
+                self.event?.outcome != nil ? Text("Mark as Completed") : Text("Completed")
+            }
+        }
+    }
+}*/
 
 struct ContentView: View {
 

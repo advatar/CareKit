@@ -130,6 +130,17 @@ private struct TaskView: View {
                                                           isComplete: controller.viewModel?.isComplete ?? false)
                     }
 
+                    CareKit.NumericProgressTaskView(taskID: OCKStore.Tasks.doxylamine.rawValue,
+                                                    eventQuery: .init(for: Date()), storeManager: storeManager) { controller in
+                        CareKitUI.NumericProgressTaskView(title: Text((controller.viewModel?.title ?? "") ),
+                                                          detail: controller.viewModel?.detail.map(Text.init),
+                                                          progress: Text(controller.viewModel?.progress ?? ""),
+                                                          goal: Text("100"),
+                                                          instructions: controller.viewModel?.instructions.map(Text.init),
+                                                          isComplete: controller.viewModel?.isComplete ?? false)
+                    }
+
+
                     // Static view
                     CareKitUI.NumericProgressTaskView(title: Text("Steps (Static)"),
                                                       progress: Text("0"),
@@ -153,10 +164,11 @@ private struct TaskView: View {
                                                        state: .fromViewModel(state: controller.viewModel?.state))
                     }
 
+
                     // Static view
                     LabeledValueTaskView(title: Text("Heart Rate (Static)"),
                                          detail: Text("Anytime"),
-                                         state: .complete(Text("62"), Text("BPM")))
+                                         state: .complete(Text("62"), Image(systemName: "person.crop.circle")))
 
                     // Static view
                     LabeledValueTaskView(title: Text("Heart Rate (Static)"),

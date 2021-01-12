@@ -29,8 +29,9 @@
  */
 
 import Foundation
+#if os(iOS)
 import HealthKit
-
+#endif
 extension OCKStore: OCKCoreDataTaskStoreProtocol {
 
     // MARK: OCKCoreDataTaskStoreProtocol
