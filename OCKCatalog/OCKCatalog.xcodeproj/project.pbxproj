@@ -456,7 +456,6 @@
 			buildPhases = (
 				E7D010F4222498F400C008DE /* Sources */,
 				E7D010F6222498F400C008DE /* Resources */,
-				51936B1B22418DAA00F7B1DD /* ShellScript */,
 				517A900123D167D000B64144 /* Frameworks */,
 				517A900223D167D000B64144 /* Embed Frameworks */,
 			);
@@ -733,7 +732,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 63UM45383T;
 				ENABLE_BITCODE = YES;
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/OCKCatalog/Info.plist";
@@ -741,7 +740,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.carekit-samplecode.OCKCatalog";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carechain.carekit-samplecode.OCKCatalog";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTS_MACCATALYST = NO;
@@ -758,7 +757,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 63UM45383T;
 				INFOPLIST_FILE = OCKCatalogTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -781,7 +780,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 63UM45383T;
 				INFOPLIST_FILE = OCKCatalogTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -805,10 +804,10 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 63UM45383T;
 				IBSC_MODULE = OCKWatchCatalog_Extension;
 				INFOPLIST_FILE = OCKWatchCatalog/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.carekit-samplecode.OCKCatalog.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carechain.carekit-samplecode.OCKCatalog.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -825,10 +824,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 63UM45383T;
 				IBSC_MODULE = OCKWatchCatalog_Extension;
 				INFOPLIST_FILE = OCKWatchCatalog/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.carekit-samplecode.OCKCatalog.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carechain.carekit-samplecode.OCKCatalog.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -845,7 +844,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_ASSET_PATHS = "\"OCKWatchCatalog Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 63UM45383T;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "OCKWatchCatalog Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -853,7 +852,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.carekit-samplecode.OCKCatalog.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carechain.carekit-samplecode.OCKCatalog.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -869,7 +868,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"OCKWatchCatalog Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 63UM45383T;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "OCKWatchCatalog Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -877,7 +876,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.carekit-samplecode.OCKCatalog.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carechain.carekit-samplecode.OCKCatalog.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -893,7 +892,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 63UM45383T;
 				INFOPLIST_FILE = OCKCatalogUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -945,7 +944,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 63UM45383T;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -1052,7 +1051,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 63UM45383T;
 				ENABLE_BITCODE = YES;
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/OCKCatalog/Info.plist";
@@ -1060,7 +1059,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.carekit-samplecode.OCKCatalog";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carechain.carekit-samplecode.OCKCatalog";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTS_MACCATALYST = NO;

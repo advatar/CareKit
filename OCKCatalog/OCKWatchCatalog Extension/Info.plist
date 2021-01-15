@@ -25,7 +25,7 @@
 		<key>NSExtensionAttributes</key>
 		<dict>
 			<key>WKAppBundleIdentifier</key>
-			<string>com.example.carekit-samplecode.OCKCatalog.watchkitapp</string>
+			<string>com.carechain.carekit-samplecode.OCKCatalog.watchkitapp</string>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.watchkit</string>

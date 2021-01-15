@@ -48,8 +48,6 @@
 		03678DF02343B21F00E27926 /* OCKAnyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03678DEF2343B21F00E27926 /* OCKAnyEvent.swift */; };
 		03678DF22343B23400E27926 /* OCKAnyEventStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03678DF12343B23400E27926 /* OCKAnyEventStore.swift */; };
 		0373D44E244E6F5B000AC579 /* OCKRemoteSynchronizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A156BB24466B6800A3EEC0 /* OCKRemoteSynchronizable.swift */; };
-		0373D44F244E6F61000AC579 /* OCKStore+Synchronization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A156BA24466B6800A3EEC0 /* OCKStore+Synchronization.swift */; };
-		0373D450244E6F64000AC579 /* OCKRevisionRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A156B924466B6800A3EEC0 /* OCKRevisionRecord.swift */; };
 		03903A5B2317308A006061D2 /* OCKHealthKitProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03903A5A2317308A006061D2 /* OCKHealthKitProxy.swift */; };
 		039782A424103DDB00D4F905 /* OCKLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034C4EDE23D8BE7F005CDD0C /* OCKLog.swift */; };
 		039782A52410403C00D4F905 /* OCKHealthKitLinkage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CB6EBE2316F14C0081AA7C /* OCKHealthKitLinkage.swift */; };
@@ -85,7 +83,6 @@
 		03FE69862345761900F3318C /* OCKCoreDataStoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FE69852345761900F3318C /* OCKCoreDataStoreProtocol.swift */; };
 		03FEA6E7244FB02800834C2C /* OCKStore+Synchronization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A156BA24466B6800A3EEC0 /* OCKStore+Synchronization.swift */; };
 		03FEA6E8244FB03100834C2C /* OCKRevisionRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A156B924466B6800A3EEC0 /* OCKRevisionRecord.swift */; };
-		03FEA6E9244FB03B00834C2C /* OCKRemoteSynchronizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A156BB24466B6800A3EEC0 /* OCKRemoteSynchronizable.swift */; };
 		51178D9423AA949D0068BAB1 /* OCKStoreCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FA436623144FC000683FF3 /* OCKStoreCoordinator.swift */; };
 		51178D9523AA949D0068BAB1 /* OCKPersistentStoreCoordinator+Patients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A0549B232ADE7D001ADF16 /* OCKPersistentStoreCoordinator+Patients.swift */; };
 		51178D9623AA949D0068BAB1 /* OCKPersistentStoreCoordinator+CarePlans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A0549D232ADF3B001ADF16 /* OCKPersistentStoreCoordinator+CarePlans.swift */; };
@@ -858,7 +855,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					515862D323A9C5BA00630AB5 = {
 						CreatedOnToolsVersion = 11.3;
@@ -932,7 +929,6 @@
 				039782A424103DDB00D4F905 /* OCKLog.swift in Sources */,
 				51178DE823AA94D50068BAB1 /* OCKEventStore.swift in Sources */,
 				51178D9923AA949D0068BAB1 /* OCKPersistentStoreCoordinator+Outcomes.swift in Sources */,
-				03FEA6E9244FB03B00834C2C /* OCKRemoteSynchronizable.swift in Sources */,
 				51178D9723AA949D0068BAB1 /* OCKPersistentStoreCoordinator+Contacts.swift in Sources */,
 				51178DB823AA94B20068BAB1 /* OCKOutcomeQuery.swift in Sources */,
 				51178DCF23AA94BD0068BAB1 /* OCKCoreDataStoreProtocol.swift in Sources */,
@@ -992,7 +988,6 @@
 				51178DA623AA94AB0068BAB1 /* OCKCDPatient.swift in Sources */,
 				51178DEA23AA94DA0068BAB1 /* OCKStoreProtocol+Synchronous.swift in Sources */,
 				51178DD323AA94C10068BAB1 /* OCKPatientStore.swift in Sources */,
-				0373D44F244E6F61000AC579 /* OCKStore+Synchronization.swift in Sources */,
 				51178DD123AA94C10068BAB1 /* OCKAnyPatient.swift in Sources */,
 				51178DED23AA94DA0068BAB1 /* OCKResultClosure.swift in Sources */,
 				51178DF023AA94DA0068BAB1 /* OCKAdherenceAggregator.swift in Sources */,
@@ -1019,7 +1014,6 @@
 				51178DDB23AA94CA0068BAB1 /* OCKContactStore.swift in Sources */,
 				51178DF123AA94DA0068BAB1 /* OCKUtilities.swift in Sources */,
 				51178DC223AA94B60068BAB1 /* OCKScheduleElement.swift in Sources */,
-				0373D450244E6F64000AC579 /* OCKRevisionRecord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1200,10 +1194,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 63UM45383T;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1228,9 +1223,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 63UM45383T;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1416,10 +1412,10 @@
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 63UM45383T;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1447,10 +1443,10 @@
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 63UM45383T;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1478,6 +1474,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63UM45383T;
 				INFOPLIST_FILE = CareKitStoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1495,6 +1492,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63UM45383T;
 				INFOPLIST_FILE = CareKitStoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

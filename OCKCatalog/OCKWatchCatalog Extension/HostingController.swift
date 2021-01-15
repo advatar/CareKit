@@ -48,7 +48,11 @@ struct ContentView: View {
 
     // Define an event for convenience.
     var event: OCKAnyEvent? {
-        controller.taskEvents
+
+        controller.viewModel?.detail.e
+            //.value?.firstEvent
+        //controller.task
+        //controller.taskEvents
         //.value?.firstEvent
     }
 
@@ -63,7 +67,8 @@ struct ContentView: View {
             }
         }
     }
-}*/
+}
+*/
 
 struct ContentView: View {
 

@@ -29,7 +29,7 @@
  */
 
 import Foundation
-#if os(iOS)
+#if !os(macOS)
 import HealthKit
 #endif
 extension OCKStore: OCKCoreDataTaskStoreProtocol {

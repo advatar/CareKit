@@ -118,6 +118,7 @@ private struct TaskView: View {
                 InstructionsTaskView(taskID: OCKStore.Tasks.doxylamine.rawValue,
                                      eventQuery: .init(for: Date()), storeManager: storeManager)
             case .numericProgress:
+                /*
                 VStack(spacing: 16) {
                     // Linked to HealthKit data
                     CareKit.NumericProgressTaskView(taskID: OCKHealthKitPassthroughStore.Tasks.steps.rawValue,
@@ -153,7 +154,10 @@ private struct TaskView: View {
                                                       goal: Text("100"),
                                                       isComplete: true)
                 }
+ */
+                EmptyView()
             case .labeledValue:
+                /*
                 VStack(spacing: 16) {
 
                     // HealthKit linked view
@@ -174,7 +178,8 @@ private struct TaskView: View {
                     LabeledValueTaskView(title: Text("Heart Rate (Static)"),
                                          detail: Text("Anytime"),
                                          state: .incomplete(Text("NO DATA")))
-                }
+                }*/
+                EmptyView()
             default:
                 EmptyView()
             }
@@ -233,6 +238,8 @@ private extension LabeledValueTaskViewState {
             return .complete(Text(value), label.map(Text.init))
         case let .incomplete(label):
             return .incomplete(Text(label))
+            default:
+                return .fromViewModel(state: .none)
         }
     }
 }
