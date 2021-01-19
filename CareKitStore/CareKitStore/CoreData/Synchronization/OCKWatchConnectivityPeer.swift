@@ -141,6 +141,7 @@ open class OCKWatchConnectivityPeer: OCKRemoteSynchronizable {
             session.sendMessage(
                 [revisionPushKey: data],
                 replyHandler: { message in
+                    print("pushRevisions \(message)")
                     if let problem = message[revisionErrorKey] as? String {
                         let error = OCKStoreError.remoteSynchronizationFailed(reason: problem)
                         completion(error)
